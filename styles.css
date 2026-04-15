@@ -259,9 +259,7 @@ p {
   display: block;
   height: 48px;
   width: auto;
-  background: #ffffff;
-  padding: 5px 8px;
-  border-radius: 6px;
+  object-fit: contain;
 }
 
 .logo-icon {
