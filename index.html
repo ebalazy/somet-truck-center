@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somet Truck Center | Premier Truck Service & Tires in Elizabeth, NJ</title>
+  <meta name="description" content="Somet Truck Center — New Jersey's trusted truck service center since 1987. Full-service repairs, tires from all major brands, and expert mechanics. Located near NJ Turnpike Exit 13A in Elizabeth, NJ. Call 908-943-9000.">
+  <meta name="keywords" content="truck repair NJ, truck tires Elizabeth NJ, truck service center New Jersey, commercial truck repair, trailer service NJ, Somet Truck Center">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Somet Truck Center | Premier Truck Service & Tires in Elizabeth, NJ">
+  <meta property="og:description" content="Full-service truck repairs, tires from all major brands, and expert mechanics. Near NJ Turnpike Exit 13A.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Somet Truck Center",
+    "image": "assets/images/logo.jpg",
+    "telephone": "+1-908-943-9000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "860 North Avenue East",
+      "addressLocality": "Elizabeth",
+      "addressRegion": "NJ",
+      "postalCode": "07201",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "url": "https://somettruckcenter.com",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo" id="logo">
+        <div class="logo-icon">🚛</div>
+        <div class="logo-text">Somet <span>Truck Center</span></div>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#services" class="active">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tires">Tires</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="tel:9089439000" class="nav-phone" id="nav-phone">
+          <span class="phone-icon">📞</span>
+          908-943-9000
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">✕</button>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#tires" onclick="closeMobileNav()">Tires</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    <a href="tel:9089439000" class="btn btn-primary" onclick="closeMobileNav()">📞 Call Now</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero.png" alt="Somet Truck Center Service Facility" loading="eager">
+    </div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Serving NJ Since 1987
+      </div>
+      <h1>New Jersey's Trusted <span class="highlight">Truck Service Center</span></h1>
+      <p class="hero-description">
+        Full-service truck and trailer repairs, tires from all major brands, and expert mechanics — 
+        conveniently located near NJ Turnpike Exit 13A, Elizabeth Seaport & Newark Airport.
+      </p>
+      <div class="hero-actions">
+        <a href="tel:9089439000" class="btn btn-primary" id="hero-cta-call">
+          <span class="btn-icon">📞</span> Call 908-943-9000
+        </a>
+        <a href="#services" class="btn btn-outline" id="hero-cta-services">
+          View Our Services →
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat fade-in">
+          <div class="stat-value">35<span>+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="hero-stat fade-in fade-in-delay-1">
+          <div class="stat-value">5<span>+</span></div>
+          <div class="stat-label">Acre Facility</div>
+        </div>
+        <div class="hero-stat fade-in fade-in-delay-2">
+          <div class="stat-value">7</div>
+          <div class="stat-label">Days a Week</div>
+        </div>
+        <div class="hero-stat fade-in fade-in-delay-3">
+          <div class="stat-value">4</div>
+          <div class="stat-label">Languages Spoken</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="text-center fade-in">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Complete Truck & Trailer Services</h2>
+        <p class="section-subtitle">From routine maintenance to major repairs, our expert technicians handle it all with quick turn-around times and reasonable prices.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Repairs & Parts -->
+        <div class="service-card fade-in" id="service-repairs">
+          <div class="service-icon">🔧</div>
+          <h3>Repairs & Parts</h3>
+          <p>Comprehensive truck and trailer repair services with a full inventory of parts to minimize downtime.</p>
+          <div class="service-list">
+            <span class="service-tag">Brakes</span>
+            <span class="service-tag">Engines</span>
+            <span class="service-tag">Transmissions</span>
+            <span class="service-tag">Clutches</span>
+            <span class="service-tag">Radiators</span>
+            <span class="service-tag">Suspensions</span>
+            <span class="service-tag">Fifth Wheels</span>
+            <span class="service-tag">Welding</span>
+          </div>
+        </div>
+
+        <!-- Tires -->
+        <div class="service-card fade-in fade-in-delay-1" id="service-tires">
+          <div class="service-icon">⚫</div>
+          <h3>Tires</h3>
+          <p>Full stock of commercial truck tires from all major manufacturers. Order online and schedule your service.</p>
+          <div class="service-list">
+            <span class="service-tag">Michelin</span>
+            <span class="service-tag">Bridgestone</span>
+            <span class="service-tag">Yokohama</span>
+            <span class="service-tag">B.F. Goodrich</span>
+            <span class="service-tag">Toyo</span>
+            <span class="service-tag">Retreads</span>
+          </div>
+        </div>
+
+        <!-- Special Services -->
+        <div class="service-card fade-in fade-in-delay-2" id="service-specials">
+          <div class="service-icon">⚡</div>
+          <h3>Special Services</h3>
+          <p>Specialized truck and trailer services to keep your fleet looking and performing its best.</p>
+          <div class="service-list">
+            <span class="service-tag">Cosmetic Repairs</span>
+            <span class="service-tag">Windshield Replacement</span>
+            <span class="service-tag">Electrical Repairs</span>
+            <span class="service-tag">A/C Service</span>
+            <span class="service-tag">Wheel Alignment</span>
+            <span class="service-tag">Emissions Testing</span>
+          </div>
+        </div>
+
+        <!-- Preventive Maintenance -->
+        <div class="service-card fade-in" id="service-maintenance">
+          <div class="service-icon">🛡️</div>
+          <h3>Preventive Maintenance</h3>
+          <p>Stay ahead of breakdowns with scheduled maintenance programs designed for commercial fleets.</p>
+          <div class="service-list">
+            <span class="service-tag">Oil Changes</span>
+            <span class="service-tag">Fluid Checks</span>
+            <span class="service-tag">PM Inspections</span>
+            <span class="service-tag">DOT Compliance</span>
+          </div>
+        </div>
+
+        <!-- Road Service -->
+        <div class="service-card fade-in fade-in-delay-1" id="service-road">
+          <div class="service-icon">🚨</div>
+          <h3>Road Service & Emergency</h3>
+          <p>When you're stuck, call our emergency hotline. We'll get you back on the road as quickly as possible.</p>
+          <div class="service-list">
+            <span class="service-tag">Emergency Repairs</span>
+            <span class="service-tag">Roadside Assistance</span>
+            <span class="service-tag">877-99-SOMET</span>
+          </div>
+        </div>
+
+        <!-- Driver Amenities -->
+        <div class="service-card fade-in fade-in-delay-2" id="service-amenities">
+          <div class="service-icon">☕</div>
+          <h3>Driver's Lounge</h3>
+          <p>Relax in our comfortable drivers' lounge while your truck is being serviced. Hot coffee, refreshments, TV and internet available.</p>
+          <div class="service-list">
+            <span class="service-tag">Free Coffee</span>
+            <span class="service-tag">Wi-Fi</span>
+            <span class="service-tag">TV</span>
+            <span class="service-tag">Refreshments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <img src="assets/images/service-repair.png" alt="Somet Truck Center mechanics at work" loading="lazy">
+        </div>
+        <div class="about-content fade-in">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">Decades of Trust & Expertise</h2>
+          <p>
+            SOMET Group was established in 1987 by its present CEO and owner, Yadin Segal. 
+            With a vision to create a premier truck service facility, the Somet Truck Center 
+            was built at Port Elizabeth, New Jersey — strategically positioned at the heart of the region's freight corridors.
+          </p>
+          <p>
+            At Somet Truck Center, we pride ourselves on our many years of experience. Our 
+            technicians have had extensive training in all types of repairs. We carry a full 
+            inventory of truck parts and tires to meet our customers' needs. Our five-acre 
+            plus facility allows for easy access and mobility.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">✅</div>
+              <div>
+                <h4>Reliable Service</h4>
+                <p>Consistent quality you can count on</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">⚡</div>
+              <div>
+                <h4>Quick Turnaround</h4>
+                <p>Get back on the road faster</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">💰</div>
+              <div>
+                <h4>Reasonable Prices</h4>
+                <p>Fair, competitive pricing always</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🤝</div>
+              <div>
+                <h4>Friendly People</h4>
+                <p>4 languages: EN, ES, PT, HE</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TIRES ========== -->
+  <section class="tires" id="tires">
+    <div class="container">
+      <div class="tires-content">
+        <div class="fade-in">
+          <div class="section-label">Tire Center</div>
+          <h2 class="section-title">All Major Tire Brands In Stock</h2>
+          <p>
+            We carry stock of tires from all major manufacturers for trucks and trailers.
+            Order your tires today, call to schedule a tire service and you'll be in and out in no time.
+            National accounts welcome.
+          </p>
+          <div class="tire-brands">
+            <div class="tire-brand"><span class="brand-check">✓</span> Michelin</div>
+            <div class="tire-brand"><span class="brand-check">✓</span> B.F. Goodrich</div>
+            <div class="tire-brand"><span class="brand-check">✓</span> Bridgestone</div>
+            <div class="tire-brand"><span class="brand-check">✓</span> Toyo Tires</div>
+            <div class="tire-brand"><span class="brand-check">✓</span> Yokohama</div>
+            <div class="tire-brand"><span class="brand-check">✓</span> Retreads</div>
+            <div class="tire-brand"><span class="brand-check">✓</span> Used Tires</div>
+            <div class="tire-brand"><span class="brand-check">✓</span> All Sizes</div>
+          </div>
+          <div style="margin-top: 2rem;">
+            <a href="tel:9089439000" class="btn btn-primary" id="tires-cta">
+              <span class="btn-icon">📞</span> Order Tires Now
+            </a>
+          </div>
+        </div>
+        <div class="tires-image fade-in">
+          <img src="assets/images/tires-section.png" alt="Commercial truck tires in stock at Somet Truck Center" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LANGUAGES BAR ========== -->
+  <div class="languages-bar fade-in">
+    <span>🇺🇸 English</span>
+    <span class="lang-divider"></span>
+    <span>🇪🇸 Español</span>
+    <span class="lang-divider"></span>
+    <span>🇧🇷 Português</span>
+    <span class="lang-divider"></span>
+    <span>🇮🇱 עברית</span>
+  </div>
+
+  <!-- ========== CONTACT / LOCATION ========== -->
+  <section class="location" id="contact">
+    <div class="container">
+      <div class="text-center fade-in">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">Visit Somet Truck Center</h2>
+        <p class="section-subtitle">Conveniently located near NJ Turnpike Exit 13A, Route 1 & 9, Route 78, and Route 22. Minutes from Elizabeth Seaport and Newark Airport.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-map fade-in" id="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.7!2d-74.1929!3d40.6757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQwJzMyLjUiTiA3NMKwMTEnMzQuNiJX!5e0!3m2!1sen!2sus!4v1"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Somet Truck Center Location">
+          </iframe>
+        </div>
+        <div class="location-info">
+          <div class="info-card fade-in" id="info-address">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>860 North Avenue East<br>Elizabeth, NJ 07201</p>
+            </div>
+          </div>
+          <div class="info-card fade-in fade-in-delay-1" id="info-hours">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Hours of Operation</h4>
+              <p>Mon – Fri: 7:00 AM – 11:00 PM<br>Saturday: 8:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+          <div class="info-card fade-in fade-in-delay-2" id="info-phone">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>Office: <a href="tel:9089439000">908-943-9000</a><br>
+              Emergency: <a href="tel:8779976638">877-99-SOMET</a></p>
+            </div>
+          </div>
+          <div class="info-card fade-in fade-in-delay-3" id="info-email">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>
+                Service: <a href="mailto:service@somettruckcenter.com">service@somettruckcenter.com</a><br>
+                Parts: <a href="mailto:parts@somettruckcenter.com">parts@somettruckcenter.com</a><br>
+                Office: <a href="mailto:office@somettruckcenter.com">office@somettruckcenter.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BANNER ========== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner fade-in">
+        <h2>Ready to Get Your Truck Serviced?</h2>
+        <p>Call us today or stop by our 5-acre facility near the NJ Turnpike. No appointment needed for most services.</p>
+        <div class="hero-actions">
+          <a href="tel:9089439000" class="btn btn-primary" id="cta-call">
+            <span class="btn-icon">📞</span> Call 908-943-9000
+          </a>
+          <a href="https://maps.google.com/?q=860+North+Avenue+East+Elizabeth+NJ+07201" target="_blank" rel="noopener" class="btn btn-outline" id="cta-directions">
+            Get Directions →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">🚛</div>
+            <div class="logo-text">Somet <span>Truck Center</span></div>
+          </a>
+          <p>New Jersey's trusted truck service center since 1987. Full‑service repairs, tires, and expert mechanics near NJ Turnpike Exit 13A.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Repairs & Parts</a>
+          <a href="#tires">Tires</a>
+          <a href="#services">Special Services</a>
+          <a href="#services">Preventive Maintenance</a>
+          <a href="#services">Road Service</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About Somet</a>
+          <a href="#contact">Contact Us</a>
+          <a href="https://www.facebook.com/SometTruckCenter" target="_blank" rel="noopener">Facebook</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:9089439000">908-943-9000</a>
+          <a href="tel:8779976638">877-99-SOMET</a>
+          <a href="mailto:service@somettruckcenter.com">service@somettruckcenter.com</a>
+          <a>860 North Ave East, Elizabeth NJ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Somet Truck Center. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/SometTruckCenter" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== STICKY MOBILE CTA ========== -->
+  <div class="sticky-cta" id="sticky-cta">
+    <div class="sticky-cta-inner">
+      <a href="tel:9089439000" class="btn btn-primary">📞 Call Now</a>
+      <a href="https://maps.google.com/?q=860+North+Avenue+East+Elizabeth+NJ+07201" target="_blank" rel="noopener" class="btn btn-outline">📍 Directions</a>
+    </div>
+  </div>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script>
+    // ============ HEADER SCROLL EFFECT ============
+    const header = document.getElementById('site-header');
+    const backToTop = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+
+      // Header background
+      if (scrollY > 80) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      // Back to top button
+      if (scrollY > 500) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ============ MOBILE NAV ============
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const mobileNavClose = document.getElementById('mobile-nav-close');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileNav.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileNavClose.addEventListener('click', closeMobileNav);
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // ============ SCROLL ANIMATIONS ============
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ============ SMOOTH SCROLL FOR NAV LINKS ============
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ============ ACTIVE NAV LINK ============
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 100;
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute('id');
+        const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (link) {
+          if (scrollY >= top && scrollY < top + height) {
+            document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+            link.classList.add('active');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
