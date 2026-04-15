@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Somet Truck Center tire icon">
+  <!--
+    Square icon version of the tire graphic.
+    Circle center: cx=10  cy=260
+    Outer radius: 250   Inner radius: 185
+    Arc span: θ = -87° to -14°
+      cos(-87°)=0.0523  sin(-87°)=-0.9986
+      cos(-14°)=0.9703  sin(-14°)=-0.2419
+    Outer: (23,10) → (253,194)   Inner: (107,74) → (193,205)... rescaled below to fit 200x200
+  -->
+
+  <!-- Scaled to fit 200×200 viewport:
+       cx=8, cy=212, R_outer=202, R_inner=150  (same as main logo, viewBox shifted)
+  -->
+
+  <!-- Tire ring fill -->
+  <path
+    d="M9.1,13.1 A202,202,0,0,1,177.8,144.9 L128.9,162.7 A150,150,0,0,0,3.7,64.8 Z"
+    fill="#222830"/>
+
+  <!-- Tread rows -->
+  <path d="M4.6,55.9 A159,159,0,0,1,137.4,159.6"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+  <path d="M5.8,44.9 A170,170,0,0,1,147.7,155.9"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+  <path d="M7.0,33.2 A182,182,0,0,1,159.0,151.8"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+  <path d="M8.3,21.3 A194,194,0,0,1,170.3,147.7"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+
+  <!-- Edge lines -->
+  <path d="M9.1,13.1 A202,202,0,0,1,177.8,144.9"
+    fill="none" stroke="#0e1320" stroke-width="2.5"/>
+  <path d="M3.7,64.8 A150,150,0,0,1,128.9,162.7"
+    fill="none" stroke="#0e1320" stroke-width="1.5" opacity="0.55"/>
+</svg>

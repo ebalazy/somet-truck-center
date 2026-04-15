@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 170" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Somet Truck Center</title>
+
+  <!--
+    Tire geometry:
+      Circle center:  cx=-12  cy=214
+      Outer radius:   202
+      Inner radius:   150
+      Arc span:       θ = -84° to -20°  (visible upper-right quadrant)
+
+    Key coordinates (degrees are standard math convention; SVG y-axis is inverted):
+      cos(-84°)=0.1045  sin(-84°)=-0.9945
+      cos(-20°)=0.9397  sin(-20°)=-0.3420
+
+    Outer arc: (9.1, 13.1) → (177.8, 144.9)
+    Inner arc: (3.7, 64.8) → (128.9, 162.7)
+  -->
+
+  <!-- ── Tire ring fill ── -->
+  <path
+    d="M9.1,13.1 A202,202,0,0,1,177.8,144.9 L128.9,162.7 A150,150,0,0,0,3.7,64.8 Z"
+    fill="#222830"/>
+
+  <!-- ── Tread block rows (dashed arcs at R = 159, 170, 182, 194) ── -->
+  <!-- Row 1  R=159  start=(4.6,55.9) end=(137.4,159.6) -->
+  <path d="M4.6,55.9 A159,159,0,0,1,137.4,159.6"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+
+  <!-- Row 2  R=170  start=(5.8,44.9) end=(147.7,155.9) -->
+  <path d="M5.8,44.9 A170,170,0,0,1,147.7,155.9"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+
+  <!-- Row 3  R=182  start=(7.0,33.2) end=(159.0,151.8) -->
+  <path d="M7.0,33.2 A182,182,0,0,1,159.0,151.8"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+
+  <!-- Row 4  R=194  start=(8.3,21.3) end=(170.3,147.7) -->
+  <path d="M8.3,21.3 A194,194,0,0,1,170.3,147.7"
+    fill="none" stroke="#b4bcc9" stroke-width="9" stroke-linecap="butt" stroke-dasharray="12 6"/>
+
+  <!-- ── Edge lines ── -->
+  <path d="M9.1,13.1 A202,202,0,0,1,177.8,144.9"
+    fill="none" stroke="#0e1320" stroke-width="2.5"/>
+  <path d="M3.7,64.8 A150,150,0,0,1,128.9,162.7"
+    fill="none" stroke="#0e1320" stroke-width="1.5" opacity="0.55"/>
+
+  <!-- ── Company name ── -->
+  <text
+    x="205" y="108"
+    fill="#1a50e8"
+    font-family="'Arial Black', 'Arial Bold', Arial, sans-serif"
+    font-size="66"
+    font-weight="900"
+    letter-spacing="-1.5">Somet Truck Center</text>
+</svg>
