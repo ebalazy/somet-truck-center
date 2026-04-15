@@ -478,6 +478,16 @@ p {
   background-clip: text;
 }
 
+.hero-subline {
+  display: block;
+  margin-top: 0.9rem;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: var(--color-text-secondary);
+}
+
 .hero-description {
   font-size: 1.2rem;
   color: var(--color-text-secondary);
@@ -513,6 +523,12 @@ p {
 
 .hero-stat .stat-value span {
   color: var(--color-primary);
+}
+
+.hero-stat .stat-value.stat-value-text {
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .hero-stat .stat-label {
@@ -688,6 +704,54 @@ p {
 .about-feature p {
   font-size: 0.8rem;
   margin: 0;
+}
+
+/* ---------- MAINTENANCE SECTION ---------- */
+.maintenance {
+  padding: var(--section-padding);
+  background: var(--color-bg-elevated);
+  position: relative;
+}
+
+.maintenance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.maintenance-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  transition: all var(--transition-base);
+}
+
+.maintenance-card:hover {
+  border-color: var(--color-border-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.maintenance-card h3 {
+  margin-bottom: 0.85rem;
+  color: var(--color-text);
+}
+
+.maintenance-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.maintenance-note {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(232, 96, 10, 0.06);
+  border: 1px solid rgba(232, 96, 10, 0.14);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  text-align: center;
 }
 
 /* ---------- TIRES SECTION ---------- */
@@ -959,7 +1023,8 @@ p {
   gap: 0.75rem;
 }
 
-.footer-social a {
+.footer-social a,
+.footer-social .social-placeholder {
   width: 36px;
   height: 36px;
   display: flex;
@@ -973,10 +1038,17 @@ p {
   transition: all var(--transition-fast);
 }
 
-.footer-social a:hover {
+.footer-social a:hover,
+.footer-social .social-placeholder:hover {
   background: rgba(232,96,10,0.1);
   border-color: var(--color-primary);
   color: var(--color-primary);
+}
+
+.footer-social svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /* ---------- SCROLL ANIMATIONS ---------- */
@@ -1061,6 +1133,10 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .maintenance-grid {
+    grid-template-columns: 1fr;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -1116,6 +1192,11 @@ p {
   }
 
   .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  /* Maintenance */
+  .maintenance-grid {
     grid-template-columns: 1fr;
   }
 
