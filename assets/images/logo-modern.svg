@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 18 820 148" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">Somet Truck Center Logo</title>
+  <desc id="logo-desc">Modernized Somet Truck Center logo with a stylized tire-track emblem and wordmark.</desc>
+
+  <g fill="none" stroke="#1b2230" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 132C74 61 146 26 286 30" stroke-width="8"/>
+    <path d="M48 148C93 86 162 53 285 55" stroke-width="8" opacity="0.82"/>
+    <path d="M80 160C120 111 178 82 270 80" stroke-width="4" opacity="0.7"/>
+    <path d="M102 166C134 126 180 100 246 97" stroke-width="2.75" opacity="0.6"/>
+  </g>
+
+  <g fill="#1b2230" opacity="0.96">
+    <g transform="translate(18 92) rotate(-31)">
+      <rect x="0" y="0" width="24" height="7" rx="3.5"/>
+      <rect x="38" y="0" width="24" height="7" rx="3.5"/>
+      <rect x="76" y="0" width="24" height="7" rx="3.5"/>
+      <rect x="114" y="0" width="24" height="7" rx="3.5"/>
+      <rect x="152" y="0" width="24" height="7" rx="3.5"/>
+      <rect x="190" y="0" width="24" height="7" rx="3.5"/>
+      <rect x="228" y="0" width="24" height="7" rx="3.5"/>
+      <rect x="266" y="0" width="24" height="7" rx="3.5"/>
+    </g>
+
+    <g transform="translate(8 120) rotate(-31)" opacity="0.86">
+      <rect x="0" y="0" width="24" height="8" rx="4"/>
+      <rect x="40" y="0" width="24" height="8" rx="4"/>
+      <rect x="80" y="0" width="24" height="8" rx="4"/>
+      <rect x="120" y="0" width="24" height="8" rx="4"/>
+      <rect x="160" y="0" width="24" height="8" rx="4"/>
+      <rect x="200" y="0" width="24" height="8" rx="4"/>
+      <rect x="240" y="0" width="24" height="8" rx="4"/>
+    </g>
+
+    <g transform="translate(24 147) rotate(-31)" opacity="0.76">
+      <rect x="0" y="0" width="24" height="8" rx="4"/>
+      <rect x="42" y="0" width="24" height="8" rx="4"/>
+      <rect x="84" y="0" width="24" height="8" rx="4"/>
+      <rect x="126" y="0" width="24" height="8" rx="4"/>
+      <rect x="168" y="0" width="24" height="8" rx="4"/>
+      <rect x="210" y="0" width="24" height="8" rx="4"/>
+    </g>
+  </g>
+
+  <g transform="translate(214 0)">
+    <text
+      x="0"
+      y="100"
+      fill="#456ee8"
+      font-family="Avenir Next, Helvetica Neue, Arial, sans-serif"
+      font-size="70"
+      font-weight="800"
+      letter-spacing="-2.4"
+    >
+      Somet
+    </text>
+    <text
+      x="192"
+      y="100"
+      fill="#2a3650"
+      font-family="Avenir Next, Helvetica Neue, Arial, sans-serif"
+      font-size="52"
+      font-weight="700"
+      letter-spacing="-1.8"
+    >
+      Truck Center
+    </text>
+    <rect x="2" y="116" width="62" height="5" rx="2.5" fill="#ff7a18"/>
+    <text
+      x="78"
+      y="126"
+      fill="#657089"
+      font-family="Avenir Next, Helvetica Neue, Arial, sans-serif"
+      font-size="18"
+      font-weight="700"
+      letter-spacing="4.8"
+    >
+      ELIZABETH, NJ
+    </text>
+  </g>
+</svg>

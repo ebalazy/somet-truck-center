@@ -255,6 +255,15 @@ p {
   letter-spacing: -0.02em;
 }
 
+.logo-image {
+  display: block;
+  height: 48px;
+  width: auto;
+  background: #ffffff;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
 .logo-icon {
   width: 42px;
   height: 42px;
@@ -1063,6 +1072,11 @@ p {
     --section-padding: 4rem 0;
   }
 
+  .logo-image {
+    height: 42px;
+    padding: 4px 6px;
+  }
+
   /* Header */
   .nav-links,
   .nav-phone {
@@ -1150,6 +1164,11 @@ p {
 }
 
 @media (max-width: 480px) {
+  .logo-image {
+    height: 38px;
+    padding: 4px 5px;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
