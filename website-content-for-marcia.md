@@ -43,7 +43,7 @@ Somet Truck Center is conveniently located near all major highways: NJ Turnpike 
 
 We offer a comfortable driver's lounge. Hot coffee and refreshments are always available. TV and internet access are also available.
 
-Our New Jersey truck and tire service center provides repair and service seven days a week. Emergency phone: 877-99-SOMET.
+Our New Jersey truck and tire service center provides repair and service throughout the week.
 
 ### Core Brand Points
 - Reliable service
@@ -140,18 +140,6 @@ Please confirm:
 - whether you want a dedicated maintenance schedule section or page
 - whether the old schedule should be reused, updated, or removed
 
-### Road Service / Emergency
-Current draft:
-When you're stuck, call our emergency hotline. We'll get you back on the road as quickly as possible.
-
-Current references on the website:
-- service available 7 days a week
-- emergency number: 877-99-SOMET
-
-Please confirm:
-- whether road service / emergency service should be highlighted
-- the exact hours and details you want listed
-
 ### Driver Amenities
 Current draft:
 Relax in our comfortable driver's lounge while your truck is being serviced. Hot coffee, refreshments, TV, and internet available.
@@ -172,7 +160,6 @@ Please confirm whether these hours are still correct.
 
 ### Phone Numbers
 - Office: 908-943-9000
-- Emergency: 877-99-SOMET
 - Accounting: 908-943-9000
 
 Please confirm which phone numbers should appear publicly on the website.
