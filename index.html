@@ -662,14 +662,40 @@
     });
 
     // ============ SMOOTH SCROLL FOR NAV LINKS ============
+    function getAnchorFocusTarget(target) {
+      return (
+        target.querySelector('.section-label, .section-title, h1, h2, h3') ||
+        target.querySelector('.container > *') ||
+        target.firstElementChild ||
+        target
+      );
+    }
+
+    function scrollToAnchorTarget(target) {
+      const headerHeight = header.getBoundingClientRect().height;
+      const focusTarget = getAnchorFocusTarget(target);
+      const top = focusTarget.getBoundingClientRect().top + window.scrollY - headerHeight - 24;
+
+      window.scrollTo({
+        top: Math.max(0, top),
+        behavior: 'smooth'
+      });
+    }
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+
+        if (href === '#') {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          return;
+        }
+
+        const target = document.querySelector(href);
         if (target) {
           e.preventDefault();
-          const offset = 80;
-          const top = target.getBoundingClientRect().top + window.scrollY - offset;
-          window.scrollTo({ top, behavior: 'smooth' });
+          scrollToAnchorTarget(target);
         }
       });
     });
