@@ -2,7 +2,7 @@
 const header = document.getElementById('site-header');
 const backToTop = document.getElementById('back-to-top');
 
-window.addEventListener('scroll', () => {
+function updateScrollState() {
   const scrollY = window.scrollY;
 
   // Header background
@@ -13,12 +13,16 @@ window.addEventListener('scroll', () => {
   }
 
   // Back to top button
-  if (scrollY > 500) {
+  if (scrollY > 3200) {
     backToTop.classList.add('visible');
   } else {
     backToTop.classList.remove('visible');
   }
-});
+}
+
+window.addEventListener('scroll', updateScrollState);
+window.addEventListener('load', updateScrollState);
+updateScrollState();
 
 backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -39,6 +43,17 @@ mobileNavClose.addEventListener('click', closeMobileNav);
 function closeMobileNav() {
   mobileNav.classList.remove('active');
   document.body.style.overflow = '';
+}
+
+function scrollToHashTarget() {
+  if (!window.location.hash) return;
+
+  const target = document.querySelector(window.location.hash);
+  if (!target) return;
+
+  const offset = 80;
+  const top = target.getBoundingClientRect().top + window.scrollY - offset;
+  window.scrollTo({ top, behavior: 'auto' });
 }
 
 // ============ SCROLL ANIMATIONS ============
@@ -75,18 +90,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // ============ ACTIVE NAV LINK ============
 const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY + 100;
+
+function updateActiveNav() {
+  const marker = (header?.offsetHeight || 80) + 96;
+  let activeLink = null;
+
   sections.forEach(section => {
-    const top = section.offsetTop;
-    const height = section.offsetHeight;
+    const rect = section.getBoundingClientRect();
     const id = section.getAttribute('id');
     const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-    if (link) {
-      if (scrollY >= top && scrollY < top + height) {
-        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-        link.classList.add('active');
-      }
+    if (link && rect.top <= marker && rect.bottom > marker) {
+      activeLink = link;
     }
   });
+
+  if (activeLink) {
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    activeLink.classList.add('active');
+  }
+}
+
+window.addEventListener('scroll', updateActiveNav);
+window.addEventListener('load', updateActiveNav);
+window.addEventListener('hashchange', () => {
+  [0, 120, 420].forEach(delay => {
+    window.setTimeout(() => {
+      scrollToHashTarget();
+      updateScrollState();
+      updateActiveNav();
+    }, delay);
+  });
 });
+window.addEventListener('load', () => {
+  [0, 120, 420, 900].forEach(delay => {
+    window.setTimeout(() => {
+      scrollToHashTarget();
+      updateScrollState();
+      updateActiveNav();
+    }, delay);
+  });
+});
+updateActiveNav();
