@@ -45,15 +45,48 @@ function closeMobileNav() {
   document.body.style.overflow = '';
 }
 
+const scrollAnchorSelector = [
+  ':scope > .container > .text-center',
+  ':scope > .container > .alignment-panel',
+  ':scope > .container > .about-grid',
+  ':scope > .container > .tires-content',
+  ':scope > .container > .maintenance-grid',
+  ':scope > .container > .location-grid',
+  ':scope > .container > .cta-inner'
+].join(', ');
+
+function getHeaderOffset() {
+  return (header?.offsetHeight || 80) + 16;
+}
+
+function getHashTarget(hash) {
+  if (!hash || hash === '#') return null;
+
+  try {
+    return document.querySelector(hash);
+  } catch {
+    return null;
+  }
+}
+
+function getScrollAnchor(target) {
+  return target.querySelector(scrollAnchorSelector) || target;
+}
+
+function scrollToTarget(target, behavior = 'smooth') {
+  const anchor = getScrollAnchor(target);
+  const top = anchor.getBoundingClientRect().top + window.scrollY - getHeaderOffset();
+
+  window.scrollTo({ top: Math.max(0, top), behavior });
+}
+
 function scrollToHashTarget() {
   if (!window.location.hash) return;
 
-  const target = document.querySelector(window.location.hash);
+  const target = getHashTarget(window.location.hash);
   if (!target) return;
 
-  const offset = 80;
-  const top = target.getBoundingClientRect().top + window.scrollY - offset;
-  window.scrollTo({ top, behavior: 'auto' });
+  scrollToTarget(target, 'auto');
 }
 
 // ============ SCROLL ANIMATIONS ============
@@ -78,12 +111,10 @@ document.querySelectorAll('.fade-in').forEach(el => {
 // ============ SMOOTH SCROLL FOR NAV LINKS ============
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = getHashTarget(this.getAttribute('href'));
     if (target) {
       e.preventDefault();
-      const offset = 80;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
-      window.scrollTo({ top, behavior: 'smooth' });
+      scrollToTarget(target, 'smooth');
     }
   });
 });
@@ -94,19 +125,21 @@ const sections = document.querySelectorAll('section[id]');
 function updateActiveNav() {
   const marker = (header?.offsetHeight || 80) + 96;
   let activeLink = null;
+  let activeSectionFound = false;
 
   sections.forEach(section => {
     const rect = section.getBoundingClientRect();
     const id = section.getAttribute('id');
     const link = document.querySelector(`.nav-links a[href="#${id}"]`);
-    if (link && rect.top <= marker && rect.bottom > marker) {
+    if (rect.top <= marker && rect.bottom > marker) {
+      activeSectionFound = true;
       activeLink = link;
     }
   });
 
-  if (activeLink) {
+  if (activeLink || activeSectionFound) {
     document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    activeLink.classList.add('active');
+    activeLink?.classList.add('active');
   }
 }
 
