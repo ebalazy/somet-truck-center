@@ -402,7 +402,7 @@ p {
   bottom: 0;
   background: rgba(255, 247, 237, 0.98);
   backdrop-filter: var(--glass-blur);
-  z-index: 990;
+  z-index: 1200;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -447,11 +447,17 @@ p {
   position: absolute;
   top: 1.5rem;
   right: 1.5rem;
+  width: 44px;
+  height: 44px;
   background: none;
   border: none;
   color: var(--color-text);
   font-size: 2rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 /* ---------- HERO SECTION ---------- */
@@ -1868,8 +1874,7 @@ p {
   }
 
   .back-to-top {
-    bottom: 5.35rem;
-    right: 1rem;
+    display: none;
   }
 
   .sticky-cta-inner {
