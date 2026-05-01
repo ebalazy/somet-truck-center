@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="STC favicon">
+  <rect width="64" height="64" rx="14" fill="#171A20"/>
+  <path d="M0 48 L64 20 L64 64 L0 64 Z" fill="#A51D16"/>
+  <path d="M0 55 L64 29 L64 64 L0 64 Z" fill="#FFB703"/>
+  <path d="M10 14 C21 6 39 7 53 17" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M12 21 C24 14 38 15 50 23" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.82"/>
+  <text x="32" y="43" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="0">STC</text>
+</svg>
